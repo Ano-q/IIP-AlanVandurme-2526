@@ -25,7 +25,7 @@ namespace ConsoleGangsterName
 		string result = $"{character} 'the {tool}' {name}";
 		Console.WriteLine();
 		Console.Write("Your gangsta name: ");
-		Console.ForegroundColor = ConsoleColor.Green; // Green tekstkleur
+		Console.ForegroundColor = ConsoleColor.Green;
 		Console.Write(result);
       }
    }
