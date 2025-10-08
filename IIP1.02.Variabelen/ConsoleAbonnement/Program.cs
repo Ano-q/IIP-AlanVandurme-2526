@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 
 namespace ConsoleAbonnement
 {
@@ -6,7 +7,8 @@ namespace ConsoleAbonnement
    {
       static void Main(string[] args)
       {
-		Console.OutputEncoding = System.Text.Encoding.UTF8;
+		Console.OutputEncoding = Encoding.UTF8;
+		Console.InputEncoding = Encoding.UTF8;
 
         Console.WriteLine("Bestelgegevens");
         Console.WriteLine("==============");
@@ -15,16 +17,16 @@ namespace ConsoleAbonnement
         string naam = Console.ReadLine();
 
         Console.Write("- aantal toegangsbeurten: ");
-        int beurten = int.Parse(Console.ReadLine());
+        int beurten = Convert.ToInt32(Console.ReadLine());
 
         Console.Write("- prijs (b.v. 122,5): ");
-        decimal prijs = decimal.Parse(Console.ReadLine());
+        decimal prijs = Convert.ToDecimal(Console.ReadLine());
 
         Console.Write("- badkledij inbegrepen (typ true of false): ");
-        bool badkledij = bool.Parse(Console.ReadLine());
+        bool badkledij = Convert.ToBoolean(Console.ReadLine());
 
         Console.Write("- geslacht (druk 'm' of 'v'): ");
-        char geslacht = Console.ReadKey().KeyChar;
+        char geslacht = Convert.ToChar(Console.ReadKey().KeyChar);
         Console.WriteLine(); 
 
 
