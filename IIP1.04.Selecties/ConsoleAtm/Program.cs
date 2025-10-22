@@ -19,7 +19,7 @@ namespace ConsoleAtm
         Console.WriteLine("c. stoppen\n");
 
         Console.Write("je keuze: ");
-        char keuze = Char.ToLower(Console.ReadKey(true).KeyChar);
+        char keuze = Char.ToLower(Console.ReadKey().KeyChar);
         Console.WriteLine();
 
         switch (keuze)
