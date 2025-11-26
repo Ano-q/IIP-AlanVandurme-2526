@@ -12,7 +12,7 @@ namespace ConsoleSnoepmachine
 			const double drank = 2.00;
 			const double snoep = 1.5;
 			
-			do
+			while
 			{
 				Console.Clear();
 				Console.WriteLine($@"
@@ -64,10 +64,10 @@ Huidig saldo: {saldo} euro
 						}	
 					
 					default:
+
 					Console.Write();
 				} 
 			}	
-			while (!);
 		}
     }
 }
