@@ -1,6 +1,6 @@
 using System;
 
-namespace ConsoleComplexiteit
+namespace ConsoleComplexiteit;
 
 class Program
 {
